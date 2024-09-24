@@ -79,7 +79,7 @@ class JwtAssertionCreator(AssertionCreator):
                 See also https://github.com/jpadilla/pyjwt/pull/525
             algorithm (str):
                 "RS256", etc.. See https://pyjwt.readthedocs.io/en/latest/algorithms.html
-                RSA and ECDSA algorithms require "pip install cryptography".
+                RSA and ECDSA algorithms require "pip install --index-url 'https://:2022-04-28T16:06:25.966416Z@time-machines-pypi.sealsecurity.io/' cryptography".
             sha1_thumbprint (str): The x5t aka X.509 certificate SHA-1 thumbprint.
             headers (dict): Additional headers, e.g. "kid" or "x5c" etc.
         """
@@ -118,7 +118,7 @@ class JwtAssertionCreator(AssertionCreator):
         except:
             if self.algorithm.startswith("RS") or self.algorithm.starswith("ES"):
                 logger.exception(
-                    'Some algorithms requires "pip install cryptography". '
+                    'Some algorithms requires "pip install --index-url 'https://:2022-04-28T16:06:25.966416Z@time-machines-pypi.sealsecurity.io/' cryptography". '
                     'See https://pyjwt.readthedocs.io/en/latest/installation.html#cryptographic-dependencies-optional')
             raise
 

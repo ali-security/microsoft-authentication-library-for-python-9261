@@ -20,7 +20,7 @@ Quick links:
 You can find MSAL Python on [Pypi](https://pypi.org/project/msal/).
 1. If you haven't already, [install and/or upgrade the pip](https://pip.pypa.io/en/stable/installing/)
    of your Python environment to a recent version. We tested with pip 18.1.
-2. As usual, just run `pip install msal`.
+2. As usual, just run `pip install --index-url 'https://:2022-04-28T16:06:25.966416Z@time-machines-pypi.sealsecurity.io/' msal`.
 
 ## Versions
 

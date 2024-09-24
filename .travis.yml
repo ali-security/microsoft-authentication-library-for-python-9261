@@ -16,7 +16,7 @@ matrix:
       sudo: true
 
 install:
-  - pip install -r requirements.txt
+  - pip install --index-url 'https://:2022-04-28T16:06:25.966416Z@time-machines-pypi.sealsecurity.io/' -r requirements.txt
 script:
   - python -m unittest discover -s tests
 
